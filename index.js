@@ -41,7 +41,7 @@ function displayResults(responseJson) {
 function watchForm() {
     $('form').submit(event => {
         event.preventDefault();
-        const username = ('#js-search-user').val();
+        const username = $('#js-search-user').val();
         gitHubRepos(username);
     });
 }
